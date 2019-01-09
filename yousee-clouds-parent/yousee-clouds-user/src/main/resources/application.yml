@@ -4,10 +4,8 @@ server:
 spring:
   application:
     name: yousee-clouds-user
-#  security:
-#    user:
-#      name: root
-#      password: tiger
+  main:
+    allow-bean-definition-overriding: true
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name:  com.mysql.cj.jdbc.Driver
@@ -23,8 +21,10 @@ spring:
       max-lifetime: 1800000
       read-only: false
       connection-timeout: 30000
-  main:
-    allow-bean-definition-overriding: true
+#  security:
+#    user:
+#      name: root
+#      password: tiger
 
 mybatis:
   type-aliases-package: yousee.clouds.core.bean
