@@ -9,10 +9,20 @@ spring:
 #      name: root
 #      password: tiger
   datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name:  com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://120.78.126.158:3307/yousee?serverTimezone=Asia/Shanghai
+    username: root
+    password: 'Proytree012'
     hikari:
-      jdbc-url: jdbc:mysql://120.78.126.158:3307/yousee?serverTimezone=Asia/Shanghai
-      username: root
-      password: 'Proytree012'
+      minimum-idle: 10
+      maximum-pool-size: 20
+      auto-commit: true
+      idle-timeout: 30000
+      pool-name: yousee-clouds-user-hikari
+      max-lifetime: 1800000
+      read-only: false
+      connection-timeout: 30000
   main:
     allow-bean-definition-overriding: true
 
