@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/yousee-clouds-chat/yousee-clouds-chat.iml" filepath="$PROJECT_DIR$/yousee-clouds-chat/yousee-clouds-chat.iml" />
       <module fileurl="file://$PROJECT_DIR$/yousee-clouds-common/yousee-clouds-common.iml" filepath="$PROJECT_DIR$/yousee-clouds-common/yousee-clouds-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yousee-clouds-eureka/yousee-clouds-eureka.iml" filepath="$PROJECT_DIR$/yousee-clouds-eureka/yousee-clouds-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/yousee-clouds-parent.iml" filepath="$PROJECT_DIR$/.idea/yousee-clouds-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/yousee-clouds-user/yousee-clouds-user.iml" filepath="$PROJECT_DIR$/yousee-clouds-user/yousee-clouds-user.iml" />
       <module fileurl="file://$PROJECT_DIR$/yousee-clouds-video/yousee-clouds-video.iml" filepath="$PROJECT_DIR$/yousee-clouds-video/yousee-clouds-video.iml" />

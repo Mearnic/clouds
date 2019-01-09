@@ -31,6 +31,8 @@
         <module>yousee-clouds-common</module>
         <module>yousee-clouds-chat</module>
         <module>yousee-clouds-video</module>
+        <module>yousee-clouds-user</module>
+        <module>yousee-clouds-eureka</module>
         <!--<module>yousee-clouds-file</module>
         <module>yousee-clouds-user</module>
         <module>yousee-clouds-message</module>

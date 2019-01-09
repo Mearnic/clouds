@@ -11,6 +11,7 @@
         <option value="$PROJECT_DIR$/yousee-clouds-chat/pom.xml" />
         <option value="$PROJECT_DIR$/yousee-clouds-video/pom.xml" />
         <option value="$PROJECT_DIR$/yousee-clouds-user/pom.xml" />
+        <option value="$PROJECT_DIR$/yousee-clouds-eureka/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

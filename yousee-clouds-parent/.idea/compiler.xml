@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="yousee-clouds-chat" />
         <module name="yousee-clouds-common" />
+        <module name="yousee-clouds-eureka" />
         <module name="yousee-clouds-user" />
         <module name="yousee-clouds-video" />
       </profile>
@@ -15,6 +16,7 @@
     <bytecodeTargetLevel>
       <module name="yousee-clouds-chat" target="1.8" />
       <module name="yousee-clouds-common" target="1.8" />
+      <module name="yousee-clouds-eureka" target="1.8" />
       <module name="yousee-clouds-file" target="1.5" />
       <module name="yousee-clouds-parent" target="1.8" />
       <module name="yousee-clouds-user" target="1.8" />
@@ -25,6 +27,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="yousee-clouds-chat" options="-parameters" />
       <module name="yousee-clouds-common" options="-parameters" />
+      <module name="yousee-clouds-eureka" options="-parameters" />
       <module name="yousee-clouds-file" options="" />
       <module name="yousee-clouds-parent" options="-parameters" />
       <module name="yousee-clouds-user" options="-parameters" />
