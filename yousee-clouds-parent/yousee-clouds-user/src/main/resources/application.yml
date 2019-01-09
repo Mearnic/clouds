@@ -4,7 +4,25 @@ server:
 spring:
   application:
     name: yousee-clouds-user
+#  security:
+#    user:
+#      name: root
+#      password: tiger
+  datasource:
+    hikari:
+      jdbc-url: jdbc:mysql://120.78.126.158:3307/yousee?serverTimezone=Asia/Shanghai
+      username: root
+      password: 'Proytree012'
+  main:
+    allow-bean-definition-overriding: true
 
+mybatis:
+  type-aliases-package: yousee.clouds.core.bean
+  configuration:
+    map-underscore-to-camel-case: true
+    default-fetch-size: 100
+    default-statement-timeout: 30
+  mapper-locations: classpath:mybatis/mapper/*.xml
 
 eureka:
   client:
@@ -13,3 +31,11 @@ eureka:
   instance:
     prefer-ip-address: true
 
+info:
+  app:
+    name: @project.artifactId@
+
+management:
+  endpoint:
+    env:
+      enabled: true
