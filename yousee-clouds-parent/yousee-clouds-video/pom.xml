@@ -11,10 +11,6 @@
 
     <description>Ninth Yousee Clouds Video</description>
 
-    <properties>
-        <java.version>1.8</java.version>
-    </properties>
-
     <parent>
         <groupId>yousee.clouds.parent</groupId>
         <artifactId>yousee-clouds-parent</artifactId>
@@ -25,7 +21,7 @@
         <dependency>
             <groupId>yousee.clouds.common</groupId>
             <artifactId>yousee-clouds-common</artifactId>
-            <version>1.0.1</version>
+            <version>${cloud.version}</version>
         </dependency>
 
         <dependency>

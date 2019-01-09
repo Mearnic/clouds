@@ -11,10 +11,6 @@
 
     <description>Ninth Yousee Clouds Common</description>
 
-    <properties>
-        <java.version>1.8</java.version>
-    </properties>
-
     <parent>
         <groupId>yousee.clouds.parent</groupId>
         <artifactId>yousee-clouds-parent</artifactId>
