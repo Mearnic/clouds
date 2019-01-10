@@ -16,7 +16,7 @@ public class UserController {
     @Resource
     private UserService userService;
 
-    @PostMapping(value = "/queryUserList")
+    @PostMapping(value = "/queryUserList",consumes = "application/json")
     public R queryUserList(@RequestBody Map<String,Object> paramter) {
         List<User> users = userService.queryUserList(paramter);
 

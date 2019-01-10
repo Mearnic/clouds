@@ -1,9 +1,48 @@
+spring:
+  application:
+    name: yousee-clouds-eureka
+  security:
+    user:
+      name: peer
+      password: tiger
+
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://peer:tiger@peer8761:8761/eureka/,http://peer:tiger@peer8762:8762/eureka/,http://peer:tiger@peer8763:8763/eureka/
+
+---
+spring:
+  profiles: peer8761
+
 server:
   port: 8761
 
 eureka:
-  client:
-    register-with-eureka: false
-    fetch-registry: false
-    service-url:
-      defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: peer8761
+---
+spring:
+  profiles: peer8762
+
+server:
+  port: 8762
+
+eureka:
+  instance:
+    hostname: peer8762
+
+---
+spring:
+  profiles: peer8763
+
+server:
+  port: 8763
+
+eureka:
+  instance:
+    hostname: peer8763

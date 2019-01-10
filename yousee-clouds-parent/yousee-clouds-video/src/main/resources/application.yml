@@ -1,0 +1,29 @@
+server:
+  port: 8093
+  tomcat:
+    max-connections: 10000
+    max-threads: 1000
+
+spring:
+  application:
+    name: yousee-clouds-video
+
+yousee:
+  clouds:
+    server:
+      user-url: http://yousee-clouds-user/user/queryUserList
+
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    service-url:
+      defaultZone: http://peer:tiger@peer8761:8761/eureka/
+  instance:
+    prefer-ip-address: true
+
+logging:
+  level:
+    yousee: debug
+    com: debug
+    org: debug

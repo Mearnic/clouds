@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class YouseeCloudsApplication {
+public class ChatCloudsApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(YouseeCloudsApplication.class, args);
+        SpringApplication.run(ChatCloudsApplication.class, args);
     }
 
 }
