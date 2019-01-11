@@ -1,4 +1,4 @@
-package yousee.clouds.bean;
+package yousee.clouds.common.core.bean;
 
 /**
  * 状态码枚举

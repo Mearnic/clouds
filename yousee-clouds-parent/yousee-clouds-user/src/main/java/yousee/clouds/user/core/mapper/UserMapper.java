@@ -1,8 +1,8 @@
-package yousee.clouds.core.mapper;
+package yousee.clouds.user.core.mapper;
 
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
-import yousee.clouds.core.bean.User;
+import yousee.clouds.user.core.bean.User;
 
 import java.util.List;
 import java.util.Map;

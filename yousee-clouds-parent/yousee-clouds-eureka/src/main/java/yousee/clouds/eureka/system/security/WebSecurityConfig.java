@@ -1,4 +1,4 @@
-package yousee.clouds.system.security;
+package yousee.clouds.eureka.system.security;
 
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;

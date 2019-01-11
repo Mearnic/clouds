@@ -1,7 +1,6 @@
-package yousee.clouds.core.service;
+package yousee.clouds.user.core.service;
 
-import org.springframework.stereotype.Service;
-import yousee.clouds.core.bean.User;
+import yousee.clouds.user.core.bean.User;
 
 import java.util.List;
 import java.util.Map;

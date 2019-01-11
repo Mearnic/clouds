@@ -1,9 +1,9 @@
-package yousee.clouds.core.controller;
+package yousee.clouds.user.core.controller;
 
 import org.springframework.web.bind.annotation.*;
-import yousee.clouds.bean.R;
-import yousee.clouds.core.bean.User;
-import yousee.clouds.core.service.UserService;
+import yousee.clouds.common.core.bean.R;
+import yousee.clouds.user.core.bean.User;
+import yousee.clouds.user.core.service.UserService;
 
 import javax.annotation.Resource;
 import java.util.List;

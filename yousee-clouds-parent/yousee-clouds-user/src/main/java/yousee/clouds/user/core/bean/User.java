@@ -1,4 +1,4 @@
-package yousee.clouds.core.bean;
+package yousee.clouds.user.core.bean;
 
 import lombok.Data;
 

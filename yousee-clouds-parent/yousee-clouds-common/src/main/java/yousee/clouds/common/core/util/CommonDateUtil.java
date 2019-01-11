@@ -1,4 +1,4 @@
-package yousee.clouds.util;
+package yousee.clouds.common.core.util;
 
 import java.util.Date;
 

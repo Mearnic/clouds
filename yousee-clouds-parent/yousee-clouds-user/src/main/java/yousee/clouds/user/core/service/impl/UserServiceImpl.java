@@ -1,9 +1,9 @@
-package yousee.clouds.core.service.impl;
+package yousee.clouds.user.core.service.impl;
 
 import org.springframework.stereotype.Service;
-import yousee.clouds.core.bean.User;
-import yousee.clouds.core.mapper.UserMapper;
-import yousee.clouds.core.service.UserService;
+import yousee.clouds.user.core.bean.User;
+import yousee.clouds.user.core.mapper.UserMapper;
+import yousee.clouds.user.core.service.UserService;
 
 import javax.annotation.Resource;
 import java.util.List;

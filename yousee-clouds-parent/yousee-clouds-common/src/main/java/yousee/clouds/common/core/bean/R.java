@@ -1,4 +1,4 @@
-package yousee.clouds.bean;
+package yousee.clouds.common.core.bean;
 
 import java.util.HashMap;
 import java.util.Map;

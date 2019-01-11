@@ -1,19 +1,14 @@
-package yousee.clouds.core.controller;
+package yousee.clouds.video.core.controller;
 
-import com.fasterxml.jackson.databind.util.JSONPObject;
-import netscape.javascript.JSObject;
-import org.apache.tomcat.util.json.JSONParser;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.cloud.client.loadbalancer.LoadBalancerClient;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
-import yousee.clouds.bean.R;
+import yousee.clouds.common.core.bean.R;
 
 import javax.annotation.Resource;
-import java.util.Map;
 
 @RestController(value = "userController")
 @RequestMapping("/user")
