@@ -1,36 +1,25 @@
 package yousee.clouds.video.core.controller;
 
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.http.HttpEntity;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.MediaType;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.web.client.RestTemplate;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 import yousee.clouds.common.core.bean.R;
+import yousee.clouds.video.core.feign.UserFeignService;
 
 import javax.annotation.Resource;
+import java.util.Map;
 
 @RestController(value = "userController")
 @RequestMapping("/user")
 public class UserController {
 
     @Resource
-    private RestTemplate restTemplate;
-
-    @Value("${yousee.clouds.server.user-url}")
-    private String userUrl;
+    private UserFeignService userFeignService;
 
     @GetMapping(value = "/queryUserList")
-    public R queryUserList() {
-
-        HttpHeaders headers = new HttpHeaders();
-        MediaType type = MediaType.parseMediaType("application/json; charset=UTF-8");
-        headers.setContentType(type);
-        headers.add("Accept", MediaType.APPLICATION_JSON.toString());
-
-
-        HttpEntity<String> formEntity = new HttpEntity<>("{}", headers);
-
-        return restTemplate.postForObject(userUrl, formEntity, R.class);
+    public R queryUserList(@RequestBody Map<String, Object> paramter) {
+        return userFeignService.queryUserList(paramter);
     }
+
 }

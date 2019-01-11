@@ -7,12 +7,17 @@ server:
 spring:
   application:
     name: yousee-clouds-video
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
 
-yousee:
-  clouds:
-    server:
-      user-url: http://yousee-clouds-user/user/queryUserList
-
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
 eureka:
   client:
     healthcheck:
@@ -22,8 +27,11 @@ eureka:
   instance:
     prefer-ip-address: true
 
+fegin:
+  hystrix:
+    enabled: true
+
 logging:
   level:
     yousee: debug
     com: debug
-    org: debug

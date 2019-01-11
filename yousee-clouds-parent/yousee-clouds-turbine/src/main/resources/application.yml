@@ -1,0 +1,23 @@
+server:
+  port: 8031
+
+spring:
+  application:
+    name: yousee-clouds-turbine
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://peer:tiger@peer8761:8761/eureka/
+  instance:
+    prefer-ip-address: true
+
+turbine:
+  appConfig: yousee-clouds-user,yousee-clouds-video
+  clusterNameExpression: "'default'"
+
