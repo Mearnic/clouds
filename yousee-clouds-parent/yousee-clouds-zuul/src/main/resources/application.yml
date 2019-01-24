@@ -1,0 +1,13 @@
+server:
+  port: 8040
+
+spring:
+  application:
+    name: yousee-clouds-zuul
+
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    service-url:
+      defaultZone: http://peer:tiger@peer8761:8761/eureka/
