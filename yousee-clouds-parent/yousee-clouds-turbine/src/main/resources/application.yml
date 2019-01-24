@@ -4,11 +4,11 @@ server:
 spring:
   application:
     name: yousee-clouds-turbine
-#  rabbitmq:
-#    host: localhost
-#    port: 5672
-#    username: guest
-#    password: guest
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: springcloud
+    password: springcloud
 
 eureka:
   client:
@@ -16,8 +16,8 @@ eureka:
       defaultZone: http://peer:tiger@peer8761:8761/eureka/
   instance:
     prefer-ip-address: true
-
-turbine:
-  appConfig: yousee-clouds-user,yousee-clouds-video
-  clusterNameExpression: "'default'"
+#
+#turbine:
+#  appConfig: yousee-clouds-user,yousee-clouds-video
+#  clusterNameExpression: "'default'"
 
