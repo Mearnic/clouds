@@ -1,0 +1,19 @@
+server:
+  port: 8050
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://peer:tiger@peer8761:8761/eureka/
+  instance:
+    prefer-ip-address: true
+
+
+spring:
+  application:
+    name: yousee-clouds-upload
+  servlet:
+    multipart:
+      max-file-size: 2000MB
+      max-request-size: 2500MB

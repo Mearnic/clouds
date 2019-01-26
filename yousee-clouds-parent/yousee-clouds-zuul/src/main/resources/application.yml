@@ -5,9 +5,40 @@ spring:
   application:
     name: yousee-clouds-zuul
 
+
 eureka:
   client:
     healthcheck:
       enabled: true
     service-url:
       defaultZone: http://peer:tiger@peer8761:8761/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+zuul:
+  ribbon:
+    eager_load:
+      enabled: true
+  ignored-services: "*"
+  routes:
+    yousee-clouds-user: /user/**
+    yousee-clouds-vodeo: /video/**
+  force-original-query-string-encoding: true
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
+#
+ribbon:
+  ReadTimeout: 30000
+  ConnectTimeout: 50000
+#  MaxAutoRetries: 0
+#  MaxAutoRetriesNextServer: 1
