@@ -48,6 +48,9 @@
         <module>yousee-clouds-user</module>
         <module>yousee-clouds-dashboard</module>
         <module>yousee-clouds-turbine</module>
+        <module>yousee-clouds-zuul</module>
+        <module>yousee-clouds-upload</module>
+        <module>yousee-clouds-sidecar</module>
         <!--<module>yousee-clouds-file</module>
         <module>yousee-clouds-user</module>
         <module>yousee-clouds-message</module>

@@ -1,0 +1,17 @@
+server:
+  port: 9091
+
+spring:
+  application:
+    name: yousee-clouds-sidecar
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://peer:tiger@peer8761:8761/eureka/
+  instance:
+    prefer-ip-address: true
+
+sidecar:
+  port: 9090
+  health-uri: http://localhost:9090/health
