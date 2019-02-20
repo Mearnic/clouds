@@ -3,7 +3,31 @@ spring:
     name: yousee-clouds-config-client
   cloud:
     config:
+      discovery:
+        enabled: true
+        service-id: yousee-clouds-config
       label: master
       uri: http://192.168.1.66:8880/
       profile: dev
+    bus:
+      trace:
+        enabled: true
+      enabled: true
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: springcloud
+    password: springcloud
 
+
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    service-url:
+      defaultZone: http://peer:tiger@peer8761:8761/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
