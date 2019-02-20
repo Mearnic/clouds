@@ -1,0 +1,12 @@
+server:
+  port: 8880
+spring:
+  application:
+    name: yousee-clouds-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: http://120.78.217.211:8900/ninth/clouds-config.git
+          username: ninth
+          password: Quain1991

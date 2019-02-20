@@ -17,7 +17,7 @@ spring:
       maximum-pool-size: 20
       auto-commit: true
       idle-timeout: 30000
-      pool-name: yousee-clouds-user-hikari
+      pool-name: mysql-hikari-pool
       max-lifetime: 1800000
       read-only: false
       connection-timeout: 30000

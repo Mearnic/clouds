@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: yousee-clouds-config-client
+  cloud:
+    config:
+      uri: http://192.168.1.66:8880/
+      profile: dev
+      label: master
