@@ -1,6 +1,8 @@
 server:
   port: 8880
 spring:
+  profiles:
+    active: git
   application:
     name: yousee-clouds-config
   cloud:
@@ -10,3 +12,12 @@ spring:
           uri: http://120.78.217.211:8900/ninth/clouds-config.git
           username: ninth
           password: Quain1991
+
+#eureka:
+#  client:
+#    healthcheck:
+#      enabled: true
+#    service-url:
+#      defaultZone: http://peer:tiger@peer8761:8761/eureka/
+#  instance:
+#    prefer-ip-address: true
