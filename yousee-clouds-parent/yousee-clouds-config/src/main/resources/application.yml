@@ -11,13 +11,11 @@ spring:
         git:
           uri: http://120.78.217.211:8900/ninth/clouds-config.git
           username: ninth
-          password: Quain1991
-
-#eureka:
-#  client:
-#    healthcheck:
-#      enabled: true
-#    service-url:
-#      defaultZone: http://peer:tiger@peer8761:8761/eureka/
-#  instance:
-#    prefer-ip-address: true
+          password: '{cipher}77057f13f8dc90baa8eb3ccc2fba359d1604cd7d955f01a9de0040e95343e8b5'
+          clone-on-start: true
+#        health:
+#          repositories:
+#            a-foo:
+#              label: master
+#              name: yousee-clouds-config-client
+#              profiles: dev
