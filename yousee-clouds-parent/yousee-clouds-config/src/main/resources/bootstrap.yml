@@ -1,2 +1,7 @@
 encrypt:
-  key: yousee
+#  key: yousee
+  key-store:
+    location: config.jks
+    password: Hysz2018
+    alias: configkey
+    secret: Hysz2018
