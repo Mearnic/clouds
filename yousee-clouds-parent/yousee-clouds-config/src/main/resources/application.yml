@@ -6,12 +6,25 @@ spring:
   application:
     name: yousee-clouds-config
   cloud:
+    bus:
+      trace:
+        enabled: true
     config:
       server:
         git:
           uri: http://120.78.217.211:8900/ninth/clouds-config.git
           username: ninth
           password: '{cipher}AEBzjG3u6cjeD8JpmfheUUMYbI/Bf8sZRpUcvAlhuzpVXxX6bMPiKH2BsNnTuaxe+WYQ61VQnnC3RjQZ0fUTkHbiFXqb3DJM5L1SM8cU+NX/wZ4o3KNfJzkR1PBDi/O33iU='
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  security:
+    user:
+      name: root
+      password: tiger
+
 
 management:
   endpoints:
