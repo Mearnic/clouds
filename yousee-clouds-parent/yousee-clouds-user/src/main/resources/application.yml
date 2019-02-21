@@ -1,17 +1,15 @@
 server:
-  port: 8091
+  port: 8093
 
 spring:
-  application:
-    name: yousee-clouds-user
   main:
     allow-bean-definition-overriding: true
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name:  com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://120.78.126.158:3307/yousee?serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://192.168.1.92:3306/yousee
     username: root
-    password: 'Proytree012'
+    password: 'Proytree_012'
     hikari:
       minimum-idle: 10
       maximum-pool-size: 20

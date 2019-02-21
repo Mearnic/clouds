@@ -19,7 +19,6 @@ public class UserController {
     @PostMapping(value = "/queryUserList",consumes = "application/json")
     public R queryUserList(@RequestBody Map<String,Object> paramter) {
         List<User> users = userService.queryUserList(paramter);
-
         return R.ok().data(users).remark("测试restfull接口");
     }
 }
