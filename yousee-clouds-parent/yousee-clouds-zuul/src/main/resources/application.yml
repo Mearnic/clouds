@@ -4,6 +4,11 @@ server:
 spring:
   application:
     name: yousee-clouds-zuul
+  zipkin:
+    base-url: http://yousee-clouds-zipkin/
+  sleuth:
+    sampler:
+      probability: 1.0
 
 
 eureka:
@@ -12,6 +17,8 @@ eureka:
       enabled: true
     service-url:
       defaultZone: http://peer:tiger@peer8761:8761/eureka/
+
+
 
 management:
   endpoints:

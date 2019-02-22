@@ -25,11 +25,12 @@
         <spring-boot.version>2.0.8.RELEASE</spring-boot.version>
 
         <lombok.version>1.16.20</lombok.version>
-
         <mybatis.version>1.3.2</mybatis.version>
         <pagehelper.version>1.2.10</pagehelper.version>
         <mysql.version>8.0.13</mysql.version>
         <logstash-logback.version>5.3</logstash-logback.version>
+        <zipkin.version>2.12.2</zipkin.version>
+        <elasticsearch.version>2.8.4</elasticsearch.version>
 
     </properties>
 
@@ -54,6 +55,7 @@
         <module>yousee-clouds-sidecar</module>
         <module>yousee-clouds-config</module>
         <module>yousee-clouds-config-client</module>
+        <module>yousee-clouds-zipkin</module>
         <!--<module>yousee-clouds-file</module>
         <module>yousee-clouds-user</module>
         <module>yousee-clouds-message</module>
@@ -99,6 +101,28 @@
             </dependency>
 
             <dependency>
+                <groupId>io.zipkin.java</groupId>
+                <artifactId>zipkin-server</artifactId>
+                <version>${zipkin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.zipkin.java</groupId>
+                <artifactId>zipkin-autoconfigure-ui</artifactId>
+                <version>${zipkin.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.zipkin.java</groupId>
+                <artifactId>zipkin-autoconfigure-collector-rabbitmq</artifactId>
+                <version>${zipkin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.zipkin.java</groupId>
+                <artifactId>zipkin-autoconfigure-storage-elasticsearch-http</artifactId>
+                <version>${elasticsearch.version}</version>
+            </dependency>
+
+            <dependency>
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
                 <version>${mysql.version}</version>
@@ -121,6 +145,8 @@
                 <artifactId>logstash-logback-encoder</artifactId>
                 <version>${logstash-logback.version}</version>
             </dependency>
+
+
 
         </dependencies>
 

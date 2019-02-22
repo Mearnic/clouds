@@ -1,0 +1,35 @@
+server:
+  port: 9411
+
+zipkin:
+  storage:
+    type: elasticsearch
+    elasticsearch:
+      cluster: elasticsearch
+      hosts: http://127.0.0.1:9200
+      index: zipkin
+      index-shards: 5
+      index-replicas: 1
+  collector:
+    rabbitmq:
+      addresses: localhost:5672
+      queque: zipkin
+      username: guest
+      password: guest
+
+spring:
+  application:
+    name: yousee-clouds-zipkin
+
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    service-url:
+      defaultZone: http://peer:tiger@peer8761:8761/eureka/
+
+management:
+  metrics:
+    web:
+      server:
+        auto-time-requests: false
